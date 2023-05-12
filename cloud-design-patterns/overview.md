@@ -15,7 +15,7 @@ Data management is the key element of cloud applications, and it influences most
 Good design encompasses consistency and coherence in component design and deployment, maintainability to simplify administration and development, and reusability to allow components and subsystems to be used in other applications and scenarios. Decisions made during the design and implementation phase significantly impact the quality and total cost of ownership of cloud-hosted applications and services.
 
 #### Design & Implementation Patterns
-1. First, Ambassador Pattern. Create helper services that send network requests on behalf of a consumer service or application.
+1. Ambassador Pattern. Create helper services that send network requests on behalf of a consumer service or application.
 2. Anti-Corruption Layer Pattern. 	Implement a façade or adapter layer between a modern application and a legacy system.
 3. Backends for Frontends Pattern. Create separate backend services to be consumed by specific frontend applications or interfaces.
 4. CQRS Pattern. Segregate operations that read data from operations that update data by using separate interfaces.
