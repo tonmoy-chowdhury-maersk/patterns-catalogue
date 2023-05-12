@@ -26,7 +26,7 @@ Good design encompasses consistency and coherence in component design and deploy
 9. Next, Gateway Offloading	Offload Pattern. shared or specialized service functionality to a gateway proxy.
 10. Next, Gateway Routing	Pattern. Route requests to multiple services using a single endpoint.
 11. Next, Leader Election	Pattern. Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.
-12. Next, NextPipes and Filters	Pattern. Break down a task that performs complex processing into a series of separate elements that can be reused.
+12. Next, Pipes and Filters	Pattern. Break down a task that performs complex processing into a series of separate elements that can be reused.
 13. Next, Sidecar	Pattern. Deploy components of an application into a separate process or container to provide isolation and encapsulation.
 14. Next, Static Content Hosting	Pattern. Deploy static content to a cloud-based storage service that can deliver them directly to the client.
 15. And the last one, Strangler Fig	Pattern. Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.
