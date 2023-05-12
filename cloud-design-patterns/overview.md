@@ -8,7 +8,19 @@ Each pattern describes the problem that the pattern addresses, considerations fo
 
 ### Data Management
 
-Data management is the key element of cloud applications, and it influences most of the quality attributes. Data is typically hosted in different locations and across multiple servers for performance, scalability or availability. This can present various challenges. For example, data consistency must be maintained, and data will typically need to be synchronized across different locations.
+Data management is the key element of cloud applications, and influences most of the quality attributes. Data is typically hosted in different locations and across multiple servers for reasons such as performance, scalability or availability, and this can present a range of challenges. For example, data consistency must be maintained, and data will typically need to be synchronized across different locations.
+
+Additionally data should be protected at rest, in transit, and via authorized access mechanisms to maintain security assurances of confidentiality, integrity, and availability. Refer to the Azure Security Benchmark Data Protection Control for more information.
+
+#### Data Management Patterns
+- Cache-Aside Pattern.	Load data on demand into a cache from a data store.
+- CQRS Pattern.	Segregate operations that read data from operations that update data by using separate interfaces.
+- Event Sourcing Pattern.	Use an append-only store to record the full series of events that describe actions taken on data in a domain.
+- Index Table Pattern.	Create indexes over the fields in data stores that are frequently referenced by queries.
+- Materialized View Pattern.	Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.
+- Sharding Pattern.	Divide a data store into a set of horizontal partitions or shards.
+- Static Content Hosting Pattern.	Deploy static content to a cloud-based storage service that can deliver them directly to the client.
+- And the last one, Valet Key Pattern.	Use a token or key that provides clients with restricted direct access to a specific resource or service.
 
 ### Design & Implementation
 
