@@ -47,6 +47,21 @@ Good design encompasses consistency and coherence in component design and deploy
 
 The distributed nature of cloud applications requires a messaging infrastructure that connects the components and services, ideally loosely coupled to maximize scalability. Asynchronous messaging is widely used and provides many benefits, but it also brings challenges such as ordering messages, poison message management, idempotency, and more.
 
+#### Messaging Patterns
+
+- Asynchronous Request-Reply Pattern.	Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response.
+- Claim Check Pattern.	Split a large message into a claim check and a payload to avoid overwhelming a message bus.
+- Choreography Pattern.	Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.
+- Competing Consumers Pattern.	Enable multiple concurrent consumers to process messages received on the same messaging channel.
+- Pipes and Filters Pattern.	Break down a task that performs complex processing into a series of separate elements that can be reused.
+- Priority Queue Pattern.	Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.
+- Publisher-Subscriber Pattern.	Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.
+- Queue-Based Load Leveling Pattern.	Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.
+- Saga Pattern.	Manage data consistency across microservices in distributed transaction scenarios. A saga is a sequence of transactions that updates each service and publishes a message or event to trigger the next transaction step.
+- Scheduler Agent Supervisor Pattern.	Coordinate a set of actions across a distributed set of services and other remote resources.
+- Sequential Convoy Pattern.	Process a set of related messages in a defined order, without blocking processing of other groups of messages.
+
+
 ## Catalog of Patterns
 
 
