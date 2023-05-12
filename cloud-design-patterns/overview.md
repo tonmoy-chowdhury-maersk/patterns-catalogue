@@ -20,6 +20,7 @@ Each pattern describes the problem that the pattern addresses, considerations fo
 
 3. Asynchronous Request-Reply Pattern. Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response. Consider using it when you need Messaging.
 
+|No.|Name|Description|Comments|
 |---|---|---|
 |4. |Backends for Frontends Pattern.	|Create separate backend services to be consumed by specific frontend applications or interfaces.|Consider using it during design and implementation phase.|
 |5. |Bulkhead Pattern. |Isolate elements of an application into pools so that if one fails, the others will continue to function.|Consider using it improve Reliability.|
