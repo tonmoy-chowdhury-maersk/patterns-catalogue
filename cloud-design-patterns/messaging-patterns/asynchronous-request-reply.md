@@ -1,4 +1,4 @@
-Sure. The Asynchronous Request-Reply Pattern is a software design pattern that decouples backend processing from a frontend host. This allows the backend processing to be asynchronous, while the frontend still needs a clear response.
+The Asynchronous Request-Reply Pattern is a software design pattern that decouples backend processing from a frontend host. This allows the backend processing to be asynchronous, while the frontend still needs a clear response.
 
 The pattern works by having the frontend send a request to the backend. The backend then processes the request asynchronously. Once the backend has processed the request, it sends a response to the frontend.
 
