@@ -10,7 +10,7 @@ Each pattern describes the problem that the pattern addresses, considerations fo
 
 Data management is the key element of cloud applications, and influences most of the quality attributes. Data is typically hosted in different locations and across multiple servers for reasons such as performance, scalability or availability, and this can present a range of challenges. For example, data consistency must be maintained, and data will typically need to be synchronized across different locations.
 
-Additionally data should be protected at rest, in transit, and via authorized access mechanisms to maintain security assurances of confidentiality, integrity, and availability. Refer to the Azure Security Benchmark Data Protection Control for more information.
+Additionally, data should be protected at rest, in transit, and via authorized access mechanisms to maintain security assurances of confidentiality, integrity, and availability.
 
 #### Data Management Patterns
 - Cache-Aside Pattern.	Load data on demand into a cache from a data store.
