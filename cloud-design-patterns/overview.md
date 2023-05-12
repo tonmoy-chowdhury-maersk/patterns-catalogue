@@ -8,19 +8,41 @@ Each pattern describes the problem that the pattern addresses, considerations fo
 
 ### Data Management
 
+Data management is the key element of cloud applications, and it influences most of the quality attributes. Data is typically hosted in different locations and across multiple servers for performance, scalability or availability. This can present various challenges. For example, data consistency must be maintained, and data will typically need to be synchronized across different locations.
+
 ### Design & Implementation
+
+Good design encompasses consistency and coherence in component design and deployment, maintainability to simplify administration and development, and reusability to allow components and subsystems to be used in other applications and scenarios. Decisions made during the design and implementation phase significantly impact the quality and total cost of ownership of cloud-hosted applications and services.
+
+#### Design & Implementation Patterns
+1. First, Ambassador Pattern. Create helper services that send network requests on behalf of a consumer service or application.
+2. Next, Anti-Corruption Layer Pattern. 	Implement a façade or adapter layer between a modern application and a legacy system.
+3. Next, Backends for Frontends Pattern. Create separate backend services to be consumed by specific frontend applications or interfaces.
+4. Next, CQRS Pattern. Segregate operations that read data from operations that update data by using separate interfaces.
+5. Next, Compute Resource Consolidation	Pattern. Pattern. Consolidate multiple tasks or operations into a single computational unit.
+6. Next, Edge Workload Configuration	Pattern. The great variety of systems and devices on the shop floor can make workload configuration a difficult problem.
+7. Next, External Configuration Store	Pattern. Move configuration information out of the application deployment package to a centralized location.
+8. Next, Gateway Aggregation	Pattern. Use a gateway to aggregate multiple individual requests into a single request.
+9. Next, Gateway Offloading	Offload Pattern. shared or specialized service functionality to a gateway proxy.
+10. Next, Gateway Routing	Pattern. Route requests to multiple services using a single endpoint.
+11. Next, Leader Election	Pattern. Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances.
+12. Next, NextPipes and Filters	Pattern. Break down a task that performs complex processing into a series of separate elements that can be reused.
+13. Next, Sidecar	Pattern. Deploy components of an application into a separate process or container to provide isolation and encapsulation.
+14. Next, Static Content Hosting	Pattern. Deploy static content to a cloud-based storage service that can deliver them directly to the client.
+15. And the last one, Strangler Fig	Pattern. Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.
 
 ### Messaging
 
+The distributed nature of cloud applications requires a messaging infrastructure that connects the components and services, ideally loosely coupled to maximize scalability. Asynchronous messaging is widely used and provides many benefits, but it also brings challenges such as ordering messages, poison message management, idempotency, and more.
+
 ## Catalog of Patterns
 
-1. Ambassador Pattern. Create helper services that send network requests on behalf of a consumer service or application. Consider using it during design and implementation phase, and to achive operational excellence.
 
-2. Anti-Corruption Layer Pattern. 	Implement a façade or adapter layer between a modern application and a legacy system. Consider using it during design and implementation phase, and to achieve operational excellence.
+
 
 3. Asynchronous Request-Reply Pattern. Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response. Consider using it when you need Messaging.
 
-4. Backends for Frontends Pattern. Create separate backend services to be consumed by specific frontend applications or interfaces. Consider using it during design and implementation phase.
+
 
 5. Bulkhead Pattern. Isolate elements of an application into pools so that if one fails, the others will continue to function. Consider using it improve Reliability.
 
